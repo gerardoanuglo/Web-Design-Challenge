@@ -1,0 +1,99 @@
+/*
+This section below was used for the main colors of the page
+*/
+#main_back_color{
+    background-color: lightgray;
+}
+
+#section_back_ground{
+    background-color: white;
+    color: rgb(26, 133, 127);
+}
+/*
+This section below was used for the tool bar in all pages
+*/
+#teal_back{
+    background-color: rgb(26, 133, 127);
+    color: white;
+    padding: 5px;
+}
+/*
+Right part of the tool bar
+*/
+#right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+  }
+/*
+
+/*
+This section below was used for the visualtions grid in the index page
+*/
+.boxL {
+    height: 650px;
+    width: 650px;
+    padding: 20px;
+    color: rgb(26, 133, 127) ;
+    background: white;
+    float: left;
+  }
+
+.box {
+    height: 500px;
+    width: 450px;
+    padding: 20px;
+    color: rgb(26, 133, 127) ;
+    background: white;
+    float: right;
+  }
+
+.img_size2{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    float: left;
+}
+
+.img_size3{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+/*
+This section below was used for the comparison page
+*/
+.img_size1{
+    width: 450px;
+    height: 400px;
+    padding: 10px;
+}
+
+.boxc{
+    height: 1000px;
+    width: 1000px;
+    padding: 20px;
+    color: rgb(26, 133, 127) ;
+    background: white;
+  }
+
+/*
+This section below was used for the 4 plot pages
+*/
+
+.boxL_plots {
+    height: 800px;
+    width: 650px;
+    padding: 20px;
+    color: rgb(26, 133, 127) ;
+    background: white;
+    float: left;
+  }
+
+.img_size4{
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}

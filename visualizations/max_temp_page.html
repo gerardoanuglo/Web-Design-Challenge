@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Max Temperature Project Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="plots.css">
+    </head>
+    <body id="main_back_color">
+        <!-- Creates Navagation Tool Bar -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" id="teal_back" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto" id="right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/max_temp_page.html" target="_blank">Max Temp</a>
+                        <a class="dropdown-item" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/humidity.html" target="_blank">Humidity</a>
+                        <a class="dropdown-item" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/cloudiness_page.html" target="_blank">Cloudiness</a>
+                        <a class="dropdown-item" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/wind_speed_page.html" target="_blank">Wind Speed</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/comparison_page.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/data_page.html">Data</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+    <!-- Creates the Main Grid -->
+    <div class="container">
+        <!-- Creates the Main Box -->
+           <div class="boxL_plots">
+               <div class="row">
+                   <div class="col-md-12">
+                       <h1>Max Temperature</h1>
+                       <hr>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-md-12">
+                       <img class="img_size4" src="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/images/Fig1.png" alt="Max Temp vs Latitude">
+                   </div>
+               </div>
+           <div class="row">
+                <div class="col-md-12">  
+                   <p>     
+                    The dataset was assembled by pulling data from the OpenWeatherMap API on over 500 cities, 
+                    collecting latitude and longitude coordinates and weather information on each city. 
+                    Using Matplotlib, a scatter plot was created to visualization any correlation between
+                    latitude and max temperature record in each city.
+                   </p>
+                   <p>
+                    Based off this data, latitude and max temperature are correlated. In the sourthern hemisphere,
+                    below 0 in latitude, temperature raises as the latitude approaches 0. Max temperature recorded by
+                    a city falls as the city latitude moves further north of the equator. 
+                   </p>
+               </div>
+           </div>
+       </div>
+   <!-- Creates the graph side bar -->
+       <div class="box" >
+           <div class="row">
+               <div class="col-md-12">
+                   <h1>Visualizations</h1>
+                   <hr>
+               </div>
+           </div>
+           <div class="row">
+            <div class="col-md-6">
+                <a href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/max_temp_page.html" target="_blank">
+                    <img class="img_size3" src="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/images/Fig1.png" alt="Max Temp vs Latitude">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/cloudiness_page.html" target="_blank">
+                    <img class="img_size3" src="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/images/Fig3.png" alt="Cloudiness vs Latitude">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/humidity.html" target="_blank">
+                    <img class="img_size3" src="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/images/Fig2.png" alt="Humidity vs Latitude">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/visualizations/wind_speed_page.html" target="_blank">
+                    <img class="img_size3" src="/Users/Jerry/Documents/UCI Bootcamp/Homework/Web-Design-Challenge/images/Fig4.png" alt="Wind Speed vs Latitude">
+                </a>
+            </div>
+        </div>
+       </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
